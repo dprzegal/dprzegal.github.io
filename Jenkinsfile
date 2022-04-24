@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("build index.html") {
       steps {
-        echo '"Hello World from Jenkins!!!" > index.html'
+        sh 'echo '"Hello World from Jenkins!!!" > index.html''
       }
     }
   }
