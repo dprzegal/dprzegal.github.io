@@ -3,10 +3,11 @@ pipeline {
   stages {
     stage("build index.html") {
       steps {
-        sh 'echo '"Hello World from Jenkins!!!" > index.html''
-        sh 'git add --all'
-        sh 'git commit -m "commit"'
-        sh 'git push -u origin main'
+        sh"""echo "Hello World from Jenkins!!!" > index.html
+              git add --all'
+              git commit -m "commit"
+              git push -u origin main
+          """
       }
     }
   }
