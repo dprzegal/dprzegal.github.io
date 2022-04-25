@@ -6,7 +6,7 @@ pipeline {
         echo "Hello World from Jenkins!!!"
         sh 'mkdir .public'
         sh 'cp -r * .public'
-        sh mv .public public'
+        sh 'mv .public public'
       }
     }
   }
